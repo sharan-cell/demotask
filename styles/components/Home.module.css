@@ -1,0 +1,138 @@
+
+.container{
+    width: auto;
+    display: flex;
+    flex: 1;
+    margin-top: 75px;
+    height: 100vh;
+}
+.container .left{
+    flex: 0.5;
+    display: flex;
+    padding-block: 3rem;
+    padding-inline: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+.container .left .top{
+flex: 1;
+
+
+}
+.container .left .top h4{
+  color: white;
+}
+.container .left .bottom{
+padding-block: 3rem;
+flex: 1;
+}
+
+.container .right{
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container .right .blob{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.container .right .blob .typing{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.container .right .blob .typing span {
+    opacity: 0;
+    animation: typing 1s infinite ;
+    animation-iteration-count: infinite;
+  }
+  @keyframes typing {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .container .right .blob .typing span:first-child {
+   color: white;
+  }
+  .container .right .blob .typing span:nth-child(2) {
+    animation-delay: 0.1s;
+    color: rgb(233, 144, 62);
+  }
+  
+  .container .right .blob .typing span:nth-child(3) {
+    animation-delay: 0.3s; 
+    color: rgb(233, 144, 62);
+  }
+  
+  .container .right .blob .typing span:nth-child(4) {
+    animation-delay: 0.6s; 
+    color: #a57dd3;
+  }
+  
+  .container .right .blob .typing span:nth-child(5) {
+    animation-delay: 0.9s; 
+    color: #5fac0e;
+  }
+  .container .right .blob .typing span:nth-child(6) {
+    animation-delay: 1.2s;
+    color: #5fac0e;
+  }
+  
+  .container .right .blob .typing span:nth-child(7) {
+    animation-delay: 1.5s; 
+    color: #5fac0e;
+  }
+  
+  .container .right .blob .typing span:nth-child(8) {
+    animation-delay: 1.8s; 
+    color: #5fac0e;
+  }
+  
+  .container .right .blob .typing span:nth-child(9) {
+    animation-delay: 2.1s; 
+    color: #5fac0e;
+  }
+  .container .right .blob .typing span:nth-child(10) {
+    animation-delay: 2.4s; 
+    
+    color: #a57dd3;
+  }
+  .container .right .blob .typing span:nth-child(11) {
+    animation-delay: 2.7s; 
+    color: white;
+  }
+
+
+  .container .right .blob .typing span:last-child::after {
+    content: '|';
+    opacity: 0;
+    animation: blink 0.5s infinite;
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  @keyframes blink {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .container .right .blob .typing{
+    position: absolute;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  }

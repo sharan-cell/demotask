@@ -1,0 +1,50 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
+  color: #4d4d4d;
+}
+.container .fills{
+  margin-bottom: 20px;
+  width: 75%;
+}
+.container .fills label{
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.container .fills input{
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.container .fills textarea{
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.container button{
+  width: clamp(5rem, 12vw, 15rem);
+  height: 3rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+
+}
+.container button:hover{
+  opacity: 0.8;
+}
